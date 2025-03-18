@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;  /* 水平置中 */
+  align-items: center;  /* 垂直置中 */
+  height: 100vh; /* 讓畫面撐滿整個螢幕 */
+  margin: 0;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+/* 個人照片 */
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto; /* 水平置中 */
+  display: block;
+}
+
+/* 姓名樣式，置中+適當大小 */
+.profile h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* 留言板 */
+.message-board {
+  margin-top: 20px;
+}
+
+/* 讓姓名與留言輸入框垂直對齊 */
+.message-board div {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 置中 */
+  gap: 10px; /* 保持輸入框間距 */
+}
+
+/* 統一輸入框樣式 */
+.message-board input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 送出按鈕 */
+.message-board button {
+  width: 40%;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.message-board button:hover {
+  background-color: #555;
+}
+
+/* 留言區 */
+.message-board ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message-board li {
+  background: #ddd;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
